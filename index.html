@@ -1,0 +1,74 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+<meta http-equiv="Content-type" content="text/html;charset=UTF-8" />
+<link rel="stylesheet" href="main.css" type="text/css" />
+<link rel="stylesheet" href="blog.css" type="text/css" />
+<link rel="alternate" type="application/rss+xml" title="Subscribe to this page..." href="feed.rss" />
+<title>No Breadcrumbs</title>
+</head><body>
+<div id="divbodyholder">
+<div class="headerholder"><div class="header">
+<div id="title">
+<h1 class="nomargin"><a class="ablack" href="http://nobreadcrumbs.github.io">No Breadcrumbs</a></h1>
+<div id="description"></div>
+</div></div></div>
+<div id="divbody"><div class="content">
+<!-- entry begin -->
+<h3><a class="ablack" href="http://nobreadcrumbs.github.io/no-breadcrumbs-blog.html">
+No Breadcrumbs Blog
+</a></h3>
+<div class="subtitle">February 15, 2014 &mdash; 
+nobreadcrumbs</div>
+<!-- text begin -->
+
+<p>Good morning/afternoon/evening.</p>
+
+<p>I want to tell you how I made a “No Breadcrumbs” blog, and by that I mean I’ve made this blog without a trace, I think.</p>
+
+<p>Before we begin, let me tell you a little about what I was used.</p>
+
+<ul>
+<li>USB Stick (4GB, but I would prefer if it was 8GB)</li>
+<li>Ubuntu Live CD</li>
+<li><a href="https://tails.boum.org/">Tails OS</a></li>
+<li><a href="https://bitcoin.org/en/">Bitcoins</a></li>
+</ul>
+
+<p>Let’s begin.</p>
+
+<p>I bought bitcoins via an anonymous <a href="https://localbitcoins.com/">LocalBitcoins.com</a> account, using <a href="https://www.torproject.org/">Tor</a> ( which I will discuss later). I found a seller who was willing to negotiate with me using PGP encrypted messages. We agreed on a time and place where I would put money. I confirmed in advance that there were no surveillance cameras nearby, and put the money in the drop. Within eight hours, the bitcoins were released from the escrow service. I then used my Bitcoins to buy a laptop and a USB stick.</p>
+
+<p>I dissected the laptop and confirmed that there were no hardware keyloggers installed inside. I then proceeded to insert a Ubuntu Live CD and booted into Linux. I then downloaded and installed the <a href="https://tails.boum.org/">Tails operating system</a> on my USB key.</p>
+
+<p><a href="https://tails.boum.org/">Tails</a> is a Debian operating system mainly centered around anonymity. It forces all network connections through the Tor network. The Tor network is simply a large amount of “nodes” that transfer encrypted web traffic between each other to hide the identity of a user. <a href="https://tails.boum.org/">Tails</a> also securely wipes the RAM of the computer it is used on, and keeps the files you ask it to keep (that are stored on an encrypted partition).</p>
+
+<p>I started <a href="https://tails.boum.org/">Tails</a> and configured the encrypted volume. On this I stored my Bitcoin keypairs, this blog, and a KeePass database. KeePass can generate passwords which are very strong and I  make sure they each have at least 400 bits of entropy.</p>
+
+<p>I then made an email account on <a href="https://www.safe-mail.net/">safe-mail.net</a>, and used it to make a GitHub account. After trying several times to configure <a href="http://octopress.org/">Octopress</a>, <a href="http://docs.getpelican.com/en/3.3.0/">Pelican</a>, <a href="http://zespia.tw/hexo/">Hexo</a> and <a href="http://www.cabinjs.com/">Cabin</a>, I finally decided to use a simple static site generator (made in shell) to generate my blog. I chose <a href="https://github.com/cfenollosa/bashblog">bashblog</a>. I’ll write a post, push it to GitHub and it will live at nobreadcrumbs.github.io!</p>
+
+<p>How could my identity be compromised?</p>
+
+<p><strong>Option 1: DNS leaks of any kind</strong></p>
+
+<p>I access the Web from a public place, and route traffic through my two VPNs. I also check for DNS leaks when I access the Internet. The furthest someone could get with this method is what is the IP of the public place from which I access the Internet, which provides no information because I never go to the same place twice.</p>
+
+<p><strong>Option 2: My Vocabulary</strong></p>
+
+<p>You might think you can identify me by analyzing my vocabulary. To prevent this, I find synonyms for each word that I use, and run my posts through many layers of Google Translate. It goes something like this: English &gt;&gt;&gt; Foreign Language &gt;&gt;&gt; English (I corrected all errors) &gt;&gt;&gt; Foreign Language 2… Up to six different layers. I got this idea from UntraceableBlog.com (it was the last piece in my mission , thank you for that!) :)</p>
+
+<p><strong>Option 3: Identifying me Through my Bitcoin Dead Drop</strong></p>
+
+<p>I lied at the beginning of this post. <strong>I</strong> did not put the money in the dead drop. I met a friend, told them to put money there, and I left without a trace.</p>
+
+<p><strong>Option 4: A kind of other attack</strong></p>
+
+<p>It is unlikely that there has been another attack because of steps I have taken above.</p>
+
+<p>I hope that you learned something about anonymity, and maybe you can create an anonymous blog, too! I’ll probably use this blog to something else in the future. Until then, goodbye! (Psst! If you enjoyed this post, I'd appreciate if you donated some bitcoins to my <a href="bitcoin:1CsZ2stsY3fnjmKWVEEfJeBiUdUVQbjWib">bitcoin address</a> (<a href="bitcoin:1CsZ2stsY3fnjmKWVEEfJeBiUdUVQbjWib">1CsZ2stsY3fnjmKWVEEfJeBiUdUVQbjWib</a>)</p>
+<!-- text end -->
+<!-- entry end -->
+<div id="all_posts"><a href="all_posts.html">View more posts</a> &mdash; <a href="feed.rss">Subscribe</a></div>
+</div>
+<div id="footer"> <a href="">nobreadcrumbs</a> &mdash; <a href="mailto:"></a><br/>
+</div></div>
+</body></html>

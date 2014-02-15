@@ -652,10 +652,6 @@ create_includes() {
     else 
         protected_mail="$(echo "$global_email" | sed 's/@/\&#64;/g' | sed 's/\./\&#46;/g')"
         echo '<div id="footer">'$global_license '<a href="'$global_author_url'">'$global_author'</a> &mdash; <a href="mailto:'$protected_mail'">'$protected_mail'</a><br/>' >> ".footer.html"
-<<<<<<< HEAD
-=======
-        echo 'Generated with <a href="https://github.com/cfenollosa/bashblog">bashblog</a>, a single bash script to easily create blogs like this one</div>' >> ".footer.html"
->>>>>>> 5912c5c5d28d682202c80b892cc8188509c411bd
     fi
 }
 
