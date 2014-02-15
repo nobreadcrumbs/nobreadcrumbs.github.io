@@ -652,6 +652,7 @@ create_includes() {
     else 
         protected_mail="$(echo "$global_email" | sed 's/@/\&#64;/g' | sed 's/\./\&#46;/g')"
         echo '<div id="footer">'$global_license '<a href="'$global_author_url'">'$global_author'</a> &mdash; <a href="mailto:'$protected_mail'">'$protected_mail'</a><br/>' >> ".footer.html"
+	echo '<a title="free hit counters" href="http://statcounter.com/free-hit-counter/" target="_blank"><img src="http://c.statcounter.com/9613332/0/45ba0c0d/0/" alt="free hit counters" style="border:none;"></a>' >> ".footer.html"
     fi
 }
 
